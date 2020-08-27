@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: auto;
+  overflow-x: hidden; }
+
+article {
+  background-color: #dfe0e2;
+  height: 150vh;
+  display: grid;
+  place-items: center; }
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  height: 45px;
+  background-color: #2b2c2d;
+  z-index: 0; }
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45px;
+  position: relative;
+  z-index: 0; }
+
+.sidebar {
+  display: none; }
+
+.nav-toggle {
+  display: none; }
+
+.nav-toggle:checked ~ .sidebar {
+  display: block; }
+
+.nav-toggle-label {
+  padding: 20px 10px 10px 20px;
+  background-color: #dd0000;
+  height: 45px; }
+  .nav-toggle-label:hover {
+    cursor: pointer; }
+
+.nav-toggle-label span {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff; }
+  .nav-toggle-label span::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff; }
+  .nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff; }
+
+.logo-div {
+  display: inline-block;
+  width: 120px;
+  margin-right: auto; }
+
+.logo {
+  width: 100%;
+  display: block; }
+
+.nav-item {
+  list-style: none; }
+  .nav-item:nth-last-child(3), .nav-item:nth-last-child(4), .nav-item:nth-last-child(5), .nav-item:nth-last-child(6), .nav-item:nth-last-child(7), .nav-item:nth-last-child(8), .nav-item:nth-last-child(9), .nav-item:nth-last-child(10), .nav-item:nth-last-child(11), .nav-item:nth-last-child(12), .nav-item:nth-last-child(13) {
+    display: none; }
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-size: 13.5px;
+  padding: 15px 10px;
+  height: 46px; }
+  .nav-link .hover-icon {
+    display: none;
+    position: absolute;
+    bottom: -9px;
+    font-size: 26px; }
+  .nav-link:hover .hover-icon {
+    display: block; }
+  .nav-link .hover-icon {
+    left: 26px; }
+  .nav-link .i-none {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -10px;
+    font-size: 30px;
+    left: 28px; }
+    .nav-link .i-none-1 {
+      display: none;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -10px;
+      font-size: 30px;
+      left: 14px; }
+    .nav-link .i-none-2 {
+      display: none;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -10px;
+      font-size: 30px;
+      left: 15px; }
+    .nav-link .i-none-3 {
+      display: none;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -10px;
+      font-size: 30px;
+      left: 18px; }
+    .nav-link .i-none-6 {
+      display: none;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -10px;
+      font-size: 30px;
+      left: 7px; }
+
+.nav-icon-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-size: 23px;
+  padding: 11px 10px; }
+  .nav-icon-link .hover-icon {
+    display: none;
+    position: absolute;
+    bottom: -9px;
+    font-size: 26px; }
+  .nav-icon-link:hover .hover-icon {
+    display: block; }
+  .nav-icon-link .hover-icon {
+    left: 12.5px; }
+
+.sidebar-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2b2c2d;
+  width: 60px;
+  height: 100vh; }
+
+.sidebar-nav-item {
+  list-style: none;
+  text-align: center; }
+  .sidebar-nav-item:hover .sidebar-dropdown-menu {
+    display: block; }
+  .sidebar-nav-item:hover .sidebar-nav-link {
+    color: #fff;
+    background-color: #dd0000; }
+
+.sidebar-nav-link {
+  display: block;
+  text-decoration: none;
+  color: #959596;
+  font-size: 10px;
+  padding: 8px 5px;
+  border-bottom: 1px solid rgba(149, 149, 150, 0.2); }
+  .sidebar-nav-link i {
+    padding-bottom: 4px;
+    display: block;
+    font-size: 19px; }
+
+.sidebar-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  width: 370px;
+  height: 100vh;
+  padding: 14px 14px 100px 14px;
+  overflow-y: hidden; }
+  .sidebar-dropdown-menu-2 {
+    overflow-y: scroll; }
+
+.sidebar-searchbar {
+  margin: -14px -14px 0 -14px;
+  width: 370px;
+  height: 50px;
+  background-color: #edeef0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .sidebar-searchbar input {
+    height: 30px;
+    width: 310px;
+    border: none;
+    outline: none;
+    padding: 8px; }
+    .sidebar-searchbar input::placeholder {
+      font-size: 13.5px;
+      color: rgba(117, 117, 117, 0.85);
+      letter-spacing: 0.5px;
+      font-weight: 300; }
+  .sidebar-searchbar i {
+    font-size: 22px;
+    padding: 4px;
+    background-color: #fff; }
+    .sidebar-searchbar i:hover {
+      cursor: pointer; }
+
+.sidebar-dropdown-item {
+  list-style: none;
+  text-align: left;
+  font-size: 12px; }
+
+.sidebar-dropdown-text {
+  display: block;
+  color: #7c7c7e;
+  border-bottom: 1px solid rgba(149, 149, 150, 0.2);
+  padding-bottom: 12px; }
+
+.sidebar-dropdown-link {
+  text-decoration: none;
+  color: rgba(83, 84, 85, 0.95);
+  border-bottom: 1px solid rgba(149, 149, 150, 0.2);
+  font-weight: 600;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .sidebar-dropdown-link i {
+    font-size: 10px;
+    color: rgba(202, 202, 203, 0.9); }
+
+.sidebar-img-div {
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.espn-player-img {
+  width: 20px;
+  margin-right: 6px; }
+
+.sidebar-img-text {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(83, 84, 85, 0.95);
+  font-weight: 600; }
+
+.espn-cricinfo-img {
+  width: 20px;
+  margin-right: 6px; }
+
+.union-jack-img {
+  width: 20px; }
+
+.sidebar-img-div span {
+  position: absolute;
+  top: -5px;
+  left: 26px;
+  color: rgba(124, 124, 126, 0.8);
+  font-size: 10px;
+  font-weight: 400; }
+
+.sidebar-img-text-lang {
+  position: absolute;
+  top: 6px;
+  left: 26px;
+  font-size: 12px; }
+
+.sidebar-dropdown-link-last {
+  border-bottom: none; }
+
+.header-navbar {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .nav-item:nth-last-child(1) {
+    display: none; }
+  .nav-item:nth-last-child(3) {
+    display: inline-block; }
+  .navbar {
+    position: sticky;
+    top: 0;
+    margin-top: 65px;
+    z-index: 0; }
+  .header-navbar {
+    width: 100vw;
+    max-width: 100%;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 100; }
+  .header-nav-div-1 {
+    height: 65px;
+    border-right: 1px solid rgba(149, 149, 150, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 132px;
+    background-color: #f1f2f3; }
+  .header-down-item {
+    position: relative;
+    list-style: none; }
+    .header-down-item:hover .header-down-dropdown {
+      display: block; }
+    .header-down-item:hover:hover .header-down-link {
+      background-color: #fff; }
+  .header-down-link {
+    text-decoration: none;
+    color: rgba(72, 73, 74, 0.85);
+    background-color: #f9f9fb;
+    border: 1px solid #cbccce;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 7px 13px; }
+    .header-down-link i {
+      margin-left: 10px;
+      color: #3988d7; }
+    .header-down-link:hover {
+      cursor: pointer;
+      color: #1d1d1d; }
+  .header-down-dropdown {
+    display: none;
+    position: absolute;
+    top: 27px;
+    width: 160px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px 0 0 5px;
+    overflow-y: scroll;
+    z-index: 1000;
+    padding: 5px; }
+  .header-down-dropdown-item {
+    list-style: none; }
+  .header-down-dropdown-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    padding: 8px 10px;
+    border-radius: 5px; }
+    .header-down-dropdown-link:hover {
+      color: #fff;
+      background-color: #004d9a; }
+  .header-nav-div-2 {
+    height: 65px;
+    border-right: 1px solid rgba(149, 149, 150, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 75px;
+    background-color: #f1f2f3;
+    display: block;
+    text-align: center; }
+    .header-nav-div-2:hover {
+      cursor: pointer; }
+      .header-nav-div-2:hover .header-div-2-text {
+        color: #000; }
+  .header-div-2-text {
+    font-size: 10px;
+    color: rgba(89, 90, 91, 0.95);
+    margin-top: 8px;
+    margin-bottom: 3px;
+    letter-spacing: -0.3px; }
+  .header-div-2-div {
+    width: 60px;
+    margin: 0 auto; }
+  .header-div-2-img {
+    width: 100%; }
+  .sport-card {
+    height: 65px;
+    border-right: 1px solid rgba(149, 149, 150, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    background-color: #edeef0; }
+    .sport-card:hover {
+      cursor: pointer; }
+      .sport-card:hover .sport-card-text-none {
+        display: block; }
+  .sport-card-text-none {
+    display: none;
+    font-size: 9px;
+    color: rgba(26, 34, 43, 0.7);
+    font-weight: 400;
+    margin-bottom: 2px; }
+  .sport-card-text {
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .ucl-card {
+    height: 65px;
+    border-right: 1px solid rgba(149, 149, 150, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 122px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3px 10px 0 10px; }
+    .ucl-card:hover {
+      cursor: pointer;
+      background-color: #edeef0; }
+      .ucl-card:hover .ucl-result,
+      .ucl-card:hover .ucl-home,
+      .ucl-card:hover .ucl-away {
+        display: none; }
+      .ucl-card:hover .ucl-text-none {
+        display: flex; }
+  .ucl-result {
+    color: #070707;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px; }
+  .ucl-home-logo {
+    width: 19px;
+    margin-right: 4px;
+    margin-left: 0px; }
+  .ucl-away-logo {
+    width: 16px;
+    margin-right: 5px;
+    margin-left: 1px; }
+  .ucl-home {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: #a5a6a7; }
+  .ucl-away {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: black;
+    position: relative; }
+    .ucl-away i {
+      position: absolute;
+      right: -12px;
+      top: -2px;
+      font-size: 20px;
+      color: #48494a; }
+  .ucl-home-score {
+    color: #a5a6a7;
+    letter-spacing: 1.5px;
+    margin-left: 46px;
+    font-weight: 700; }
+  .ucl-away-score {
+    color: black;
+    letter-spacing: 1.5px;
+    margin-left: 44px;
+    font-weight: 700;
+    font-size: 11px; }
+  .ucl-text-none {
+    display: none;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 11px;
+    color: rgba(89, 90, 91, 0.95);
+    letter-spacing: 0.3px;
+    font-weight: 500; }
+  .ufc-card {
+    height: 65px;
+    border-right: 1px solid rgba(149, 149, 150, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 135px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px 2px 10px; }
+    .ufc-card:hover {
+      cursor: pointer;
+      background-color: #edeef0; }
+      .ufc-card:hover .ufc-result,
+      .ufc-card:hover .ufc-home,
+      .ufc-card:hover .ufc-away {
+        display: none; }
+      .ufc-card:hover .ufc-text-none {
+        display: flex; }
+  .ufc-home-logo,
+  .ufc-away-logo {
+    width: 15px;
+    margin-right: 4px;
+    margin-left: 2px; }
+  .ufc-result {
+    color: #070707;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-bottom: 5px; }
+  .ufc-home {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #a5a6a7; }
+  .ufc-away {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: black;
+    position: relative; }
+    .ufc-away i {
+      position: absolute;
+      right: -13px;
+      top: -2px;
+      font-size: 20px;
+      color: #48494a; }
+  .ufc-away-score {
+    margin-left: 12px;
+    font-weight: 700; }
+  .ufc-text-none {
+    display: none;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 11px;
+    color: rgba(89, 90, 91, 0.95);
+    letter-spacing: 0.3px;
+    font-weight: 500; }
+  .nba-card {
+    height: 65px;
+    border-right: 1px solid rgba(149, 149, 150, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3px 10px 0 10px; }
+    .nba-card:hover {
+      cursor: pointer;
+      background-color: #edeef0; }
+      .nba-card:hover .nba-result,
+      .nba-card:hover .nba-home,
+      .nba-card:hover .nba-away {
+        display: none; }
+      .nba-card:hover .nba-text-none {
+        display: flex; }
+  .nba-result {
+    color: #070707;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-bottom: 5px; }
+  .nba-result span {
+    margin-left: 8px;
+    font-size: 11px;
+    color: #4e4f50;
+    letter-spacing: -0.2px;
+    font-weight: 400; }
+  .nba-home-logo {
+    width: 22px;
+    margin-right: 4px;
+    margin-left: -5px; }
+  .nba-away-logo {
+    width: 22px;
+    margin-right: 4px;
+    margin-left: -5px; }
+  .nba-home {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: black;
+    position: relative; }
+    .nba-home i {
+      position: absolute;
+      right: -15px;
+      top: -2px;
+      font-size: 20px;
+      color: #48494a; }
+  .nba-away {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: #a5a6a7; }
+  .nba-home-score {
+    color: black;
+    letter-spacing: 1.5px;
+    margin-left: 74px;
+    font-weight: 700; }
+  .nba-away-score {
+    color: #a5a6a7;
+    letter-spacing: 1.5px;
+    margin-left: 71px;
+    font-weight: 700;
+    font-size: 11px; }
+  .nba-text-none {
+    display: none;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 11px;
+    color: rgba(89, 90, 91, 0.95);
+    letter-spacing: 0.3px;
+    font-weight: 500; }
+  .nba-card-1 {
+    min-width: 165px;
+    padding: 0 10px 0 10px; }
+  .nba-result-1 {
+    margin-bottom: 3px; }
+  .nba-home-logo-1 {
+    width: 12px;
+    margin-right: 4px;
+    margin-left: 2px; }
+  .nba-away-logo-1 {
+    width: 14px;
+    margin-right: 4px;
+    margin-left: 0px; }
+  .nba-home-1 {
+    margin-bottom: 5px; }
+    .nba-home-1 i {
+      right: -18px; }
+  .nba-away-score-1 {
+    margin-left: 73px; }
+  .nba-card-2 {
+    min-width: 162px;
+    padding: 0 10px 0 10px; }
+  .nba-result-2 {
+    margin-bottom: 4.5px; }
+  .nba-result-2 span {
+    margin-left: 8px;
+    letter-spacing: -0.2px; }
+  .nba-home-2 {
+    color: #a5a6a7;
+    margin-bottom: 5.5px; }
+  .nba-home-score-2 {
+    color: #a5a6a7; }
+  .nba-away-2 {
+    color: black;
+    position: relative; }
+    .nba-away-2 i {
+      position: absolute;
+      right: -16px;
+      top: -2px;
+      font-size: 20px;
+      color: #48494a; }
+  .nba-away-score-2 {
+    color: black;
+    margin-left: 76px; }
+  .arrow-card {
+    height: 65px;
+    border-right: 1px solid rgba(149, 149, 150, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(149, 149, 150, 0.7);
+    border-right: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 45px;
+    background-color: #f1f2f3; }
+    .arrow-card:hover {
+      cursor: pointer; }
+      .arrow-card:hover .arrow-card-text {
+        color: #2b80d3; }
+  .arrow-card-text {
+    font-size: 25px;
+    color: #5b5c5e; } }
+
+@media screen and (min-width: 1024px) {
+  .nav-item:nth-last-child(4), .nav-item:nth-last-child(5), .nav-item:nth-last-child(6), .nav-item:nth-last-child(7), .nav-item:nth-last-child(10), .nav-item:nth-last-child(11), .nav-item:nth-last-child(12), .nav-item:nth-last-child(13) {
+    display: inline-block; }
+  .nav-item:nth-last-child(7) {
+    margin-right: auto; }
+  .logo-div {
+    margin-right: 0; }
+  .nav-toggle-label {
+    display: none; }
+  .nav-item {
+    position: relative; }
+    .nav-item:hover .i-none {
+      display: block; }
+    .nav-item:hover .dropdown-menu {
+      transform: scale(1, 1);
+      transition: ease-in-out 0.15s; }
+  .dropdown-menu {
+    transform: scale(1, 0);
+    transform-origin: top;
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: -105px;
+    background-color: #fff;
+    width: 990px;
+    height: 425px;
+    padding: 10px; }
+  .dropdown-menu-left {
+    width: 230px; }
+  .dropdown-item {
+    list-style: none; }
+  .dropdown-link {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #7c7d7f;
+    border-radius: 5px; }
+    .dropdown-link:hover {
+      color: #fff;
+      background-color: red; }
+  .dropdown-menu-right {
+    margin-left: 10px;
+    width: 85%;
+    background-color: #f1f2f3;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .top-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 56px 15px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2b2c2d; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(7, 35px); }
+  .grid-item:nth-last-child(1) {
+    grid-column: 4 / 5; }
+  .grid-item {
+    text-decoration: none;
+    color: #737476;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; }
+    .grid-item img {
+      width: 20px;
+      margin-right: 10px; }
+    .grid-item:hover {
+      background-color: #fff; } }
+
+@media screen and (min-width: 1175px) {
+  .dropdown-menu {
+    left: -10px;
+    width: 1010px; } }

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <!-- nav toggle and sidebar -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <!-- sidebar -->
+        <nav class="sidebar">
+          <ul class="sidebar-nav">
+            <!-- search -->
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link"><i class="fas fa-search"></i>Search</a>
+              <div class="sidebar-dropdown-menu sidebar-dropdown-menu-1">
+                <div class="sidebar-searchbar">
+                  <input type="search" placeholder="Search" />
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </li>
+            <!-- sports -->
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link"><i class="far fa-futbol"></i>sports</a>
+              <ul class="sidebar-dropdown-menu sidebar-dropdown-menu-2">
+                <li class="sidebar-dropdown-item">
+                  <p class="sidebar-dropdown-text">sports</p>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Football</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">NFL</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">NBA</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">MMA</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">F1</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Cricket</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Boxing</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">MLB</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">NHL</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">esports</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">WWE</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link"
+                    >espnW <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Tennis</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Golf</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">NCAAM</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Rugby</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Cycling</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Athletics</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Olympic Sports</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">XFL</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link"
+                    >X Games <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Analytics</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">MotoGP</a>
+                </li>
+              </ul>
+            </li>
+            <!-- watch -->
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link"><i class="fas fa-play"></i>Watch</a>
+              <ul class="sidebar-dropdown-menu sidebar-dropdown-menu-3">
+                <li class="sidebar-dropdown-item">
+                  <p class="sidebar-dropdown-text">ESPN Player</p>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">
+                    <div class="sidebar-img-div">
+                      <img src="img/espn-player-img.png" alt="" class="espn-player-img" />
+                      <p class="sidebar-img-text">ESPN Player</p>
+                    </div>
+                    <i class="fas fa-external-link-alt"> </i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <!-- fantasy -->
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link"
+                ><i class="fas fa-shield-alt"></i>Fantasy</a
+              >
+              <ul class="sidebar-dropdown-menu sidebar-dropdown-menu-4">
+                <li class="sidebar-dropdown-item">
+                  <p class="sidebar-dropdown-text">Fantasy</p>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Fantasy Home </a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link"
+                    >Fantasy Rugby <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link"
+                    >Fantasy Football <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">American Football</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Baseball</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Basketball</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Hockey</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">Streak</a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link"
+                    >Footytips <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <!-- more -->
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link"><i class="fas fa-th"></i>More</a>
+              <ul class="sidebar-dropdown-menu sidebar-dropdown-menu-5">
+                <li class="sidebar-dropdown-item">
+                  <p class="sidebar-dropdown-text">More from ESPN</p>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link">
+                    <div class="sidebar-img-div">
+                      <img src="img/espn-player-img.png" alt="" class="espn-player-img" />
+                      <p class="sidebar-img-text">ESPN Player</p>
+                    </div>
+                    <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link"
+                    ><div class="sidebar-img-div">
+                      <img src="img/cricinfo-logo.png" alt="" class="espn-cricinfo-img" />
+                      <p class="sidebar-img-text">ESPN Cricinfo</p>
+                    </div>
+                    <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+                <li class="sidebar-dropdown-item">
+                  <a href="#" class="sidebar-dropdown-link sidebar-dropdown-link-last">
+                    <div class="sidebar-img-div">
+                      <img src="img/union-jack.gif" alt="" class="union-jack-img" />
+                      <span>Edition</span>
+                      <p class="sidebar-img-text sidebar-img-text-lang">UK</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+
+        <!-- logo -->
+        <div class="logo-div">
+          <a href="#"><img class="logo" src="img/logo.png" alt="" /></a>
+        </div>
+
+        <!-- left side of nav-->
+        <li class="nav-item">
+          <a href="#" class="nav-link">Football<i class="fas fa-caret-up i-none"></i></a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu-left">
+              <li class="dropdown-item"><a href="#" class="dropdown-link">Home</a></li>
+              <li class="dropdown-item"><a href="#" class="dropdown-link">Scores</a></li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Fixtures</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Transfers</a>
+              </li>
+              <li class="dropdown-item"><a href="#" class="dropdown-link">Teams</a></li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">League & Cups</a>
+              </li>
+              <li class="dropdown-item"><a href="#" class="dropdown-link">Tables</a></li>
+            </ul>
+
+            <div class="dropdown-menu-right">
+              <div class="top-text">
+                <p class="top-inline-text">Premier League</p>
+                <p class="top-inline-text-1">Top European Clubs</p>
+              </div>
+
+              <div class="grid-container">
+                <a href="#" class="grid-item"
+                  ><img src="img/arsenal-logo.png" alt="" /> Arsenal</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/fulham-logo.png" alt="" /> Fulham</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/sheff-logo.svg" alt="" /> Sheffield United</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/athletico-logo.png" alt="" /> Athletico Madrid</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/aston-logo.png" alt="" /> Aston Villa</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/leeds-logo.png" alt="" /> Leeds United</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/southampton-logo.png" alt="" /> Southampton</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/barcelona-img.png" alt="" /> Barcelona</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/brighton-logo.png" alt="" /> Brighton & Hove Albion</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/leicester-logo.png" alt="" /> Leicester City</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/tottenham-logo-2.svg" alt="" /> Tottenham Hotspur</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/madrid-logo.png" alt="" /> Real Madrid</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/burnley-logo.png" alt="" /> Burnley</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/liverpool-logo.png" alt="" /> Liverpool</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/westbrom-logo.png" alt="" /> West Bromwich Albion
+                </a>
+                <a href="#" class="grid-item"
+                  ><img src="img/bayern-logo.png" alt="" /> Bayern Munich</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/chelsea-logo.png" alt="" /> Chelsea</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/city-logo.png" alt="" /> Manchester City</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/westham-logo.png" alt="" /> West Ham United</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/dortmund-logo.png" alt="" /> Borussia Dortmund</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/palace-logo.png" alt="" /> Crystal Palace</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/manutd-logo.png" alt="" /> Manchester United</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/wolves-logo.png" alt="" /> Wolverhampton Wonderers</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/juve-logo-2.png" alt="" /> Juventus</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/everton-logo.png" alt="" /> Everton</a
+                >
+                <a href="#" class="grid-item"
+                  ><img src="img/newcastle-logo.png" alt="" /> Newcastle United</a
+                >
+
+                <a href="#" class="grid-item"
+                  ><img src="img/psg-logoo.svg" alt="" /> PSG</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">NFL<i class="fas fa-caret-up i-none-1"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">NBA<i class="fas fa-caret-up i-none-2"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">MMA<i class="fas fa-caret-up i-none-3"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">F1<i class="fas fa-caret-up i-none-4"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Cricket<i class="fas fa-caret-up i-none-5"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"
+            ><i class="fas fa-ellipsis-h"></i><i class="fas fa-caret-up i-none-6"></i
+          ></a>
+        </li>
+        <!-- right side of mobile nav -->
+        <li class="nav-item"><a href="#" class="nav-link">ESPN Player</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Fantasy</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-icon-link"><i class="fas fa-th"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-icon-link"><i class="fas fa-search"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-icon-link"
+            ><i class="fas fa-user-circle"></i><i class="fas fa-caret-up hover-icon"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"
+            >SCORES<i class="fas fa-caret-up hover-icon"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 1st media querey  -->
+
+    <!-- header nav -->
+
+    <header class="header-navbar">
+      <!-- 1st header box -->
+
+      <div class="header-nav-div-1">
+        <ul class="header-down">
+          <li class="header-down-item">
+            <a href="#" class="header-down-link"
+              >TOP EVENTS<i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="header-down-dropdown">
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Top Events</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Top Football</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">UCL</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">UEL</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Scot Prem</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">UCL-Q</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">UEL-Q</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Prem</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Belgium</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">MLS</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">A-League</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">CSL</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Liga MX</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Friendly</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Allsvenskanliga</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">S.Africa Prem</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">RSA Nedbank Cup</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">UFC</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">NRL</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">NASCAR</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">WNBA Draft</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">NFL</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">NBA</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Formula 1</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Golf (PGA)</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Tennis (M)</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Tennis (W)</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Six Nations</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link"
+                  >European Rugby <br />Challenge Cup</a
+                >
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link"
+                  >Gallagher <br />Premiership</a
+                >
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">MLB</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Guiness PRO14</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Major League Rugby</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">Ligue 1</a>
+              </li>
+              <li class="header-down-dropdown-item">
+                <a href="#" class="header-down-dropdown-link">PAX in ENG</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 2nd header box -->
+
+      <div class="header-nav-div-2">
+        <p class="header-div-2-text">Presented by</p>
+        <div class="header-div-2-div">
+          <img src="img/bet365-2.png" alt="" class="header-div-2-img" />
+        </div>
+      </div>
+
+      <!-- UCL SPORT CARD -->
+
+      <div class="sport-card">
+        <p class="sport-card-text">
+          <span class="sport-card-text-none">See All</span> UCL
+        </p>
+      </div>
+
+      <!-- UCL CARD -->
+
+      <div class="ucl-card">
+        <p class="ucl-text-none">Summary</p>
+        <p class="ucl-result">FT</p>
+        <p class="ucl-home">
+          <img src="img/psg-logo.jpeg" alt="" class="ucl-home-logo" /> PSG
+          <span class="ucl-home-score">0</span>
+        </p>
+        <p class="ucl-away">
+          <img src="img/bayern-logo.png" alt="" class="ucl-away-logo" /> MUN<span
+            class="ucl-away-score"
+            >1</span
+          ><i class="fas fa-caret-left"></i>
+        </p>
+      </div>
+
+      <!-- UFC SPORT CARD -->
+
+      <div class="sport-card">
+        <p class="sport-card-text">
+          <span class="sport-card-text-none">See All</span> UFC
+        </p>
+      </div>
+
+      <!-- UFC CARD -->
+
+      <div class="ufc-card">
+        <p class="ufc-text-none">Fightcenter</p>
+        <p class="ufc-result">Final - R5, 5:00</p>
+        <p class="ufc-home">
+          <img src="img/brazil-flag.png" alt="" class="ufc-home-logo" /> P. Munhoz
+        </p>
+        <p class="ufc-away">
+          <img src="img/us-flag.jpg" alt="" class="ufc-away-logo" /> F. Edgar
+          <span class="ufc-away-score">S Dec</span><i class="fas fa-caret-left"></i>
+        </p>
+      </div>
+
+      <!-- 5th header box -->
+
+      <div class="sport-card">
+        <p class="sport-card-text">
+          <span class="sport-card-text-none">See All</span> NBA
+        </p>
+      </div>
+
+      <!-- 6th header box -->
+
+      <div class="nba-card">
+        <p class="nba-text-none">Gamecast</p>
+        <p class="nba-result">Final <span>MIL Lead series 2-1</span></p>
+        <p class="nba-home">
+          <img src="img/bukcs-logo.png" alt="" class="nba-home-logo" /> MIL
+          <span class="nba-home-score">121</span><i class="fas fa-caret-left"></i>
+        </p>
+        <p class="nba-away">
+          <img src="img/magic-logo-3.png" alt="" class="nba-away-logo" /> ORL<span
+            class="nba-away-score"
+            >107</span
+          >
+        </p>
+      </div>
+
+      <!-- 7th header box -->
+
+      <div class="nba-card nba-card-1">
+        <p class="nba-text-none">Gamecast</p>
+        <p class="nba-result nba-result-1">Final <span>MIA Lead series 3-0</span></p>
+        <p class="nba-home nba-home-1">
+          <img src="img/miami-logo.png" alt="" class="nba-home-logo-1" /> MIA
+          <span class="nba-home-score">124</span><i class="fas fa-caret-left"></i>
+        </p>
+        <p class="nba-away">
+          <img src="img/pacers-logo.png" alt="" class="nba-away-logo-1" /> PAC<span
+            class="nba-away-score nba-away-score-1"
+            >115</span
+          >
+        </p>
+      </div>
+
+      <!-- 8th header box -->
+
+      <div class="nba-card nba-card-2">
+        <p class="nba-text-none">Gamecast</p>
+        <p class="nba-result nba-result-2">Final <span>LAL Lead series 2-1</span></p>
+        <p class="nba-home nba-home-2">
+          <img src="img/blazers-logo.jpeg" alt="" class="nba-home-logo-1" /> BLA
+          <span class="nba-home-score nba-home-score-2">108</span>
+        </p>
+        <p class="nba-away nba-away-2">
+          <img src="img/lakers-logo.png" alt="" class="nba-away-logo-1" /> LAL<span
+            class="nba-away-score nba-away-score-2"
+            >116</span
+          ><i class="fas fa-caret-left"></i>
+        </p>
+      </div>
+
+      <!-- top right arrow -->
+
+      <div class="arrow-card">
+        <p class="arrow-card-text"><i class="fas fa-angle-right"></i></p>
+      </div>
+    </header>
+
+    <article><p>content</p></article>
+  </body>
+</html>
